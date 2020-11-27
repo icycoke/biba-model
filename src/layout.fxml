@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="550.0" prefWidth="900.0"
            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="sample.Controller">
+           fx:controller="Controller">
     <AnchorPane maxHeight="350.0" maxWidth="900.0" minHeight="350.0" minWidth="900.0" prefHeight="350.0"
                 prefWidth="900.0">
         <Label layoutX="87.0" layoutY="70.0" prefHeight="30" text="ID:"/>
