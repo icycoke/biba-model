@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="550.0" prefWidth="900.0"
+           xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="sample.Controller">
+    <AnchorPane maxHeight="350.0" maxWidth="900.0" minHeight="350.0" minWidth="900.0" prefHeight="350.0"
+                prefWidth="900.0">
+        <Label layoutX="87.0" layoutY="70.0" prefHeight="30" text="ID:"/>
+        <TextField fx:id="createIdText" layoutX="115.0" layoutY="70.0"/>
+        <Button fx:id="createUserButton" layoutX="332.0" layoutY="70.0" mnemonicParsing="false" prefHeight="30.0"
+                prefWidth="100.0" text="Create user" textAlignment="CENTER"/>
+        <Button fx:id="createFileButton" layoutX="455.0" layoutY="70.0" mnemonicParsing="false" prefHeight="30.0"
+                prefWidth="100.0" text="Create file" textAlignment="CENTER"/>
+        <Label layoutX="87.0" layoutY="170.0" prefHeight="30" text="ID:"/>
+        <TextField fx:id="grantIdText" layoutX="115.0" layoutY="170.0"/>
+        <Label layoutX="409.0" layoutY="170.0" prefHeight="30" text="Integrity Level:"/>
+        <TextField fx:id="levelText" layoutX="500.0" layoutY="170.0"/>
+        <Button fx:id="grantButton" layoutX="691.0" layoutY="169.0" mnemonicParsing="false" prefHeight="30.0"
+                prefWidth="100.0" text="Grant level"/>
+        <ChoiceBox fx:id="typeChoiceBox" layoutX="288.0" layoutY="170.0" prefHeight="30.0" prefWidth="100.0"/>
+        <Label layoutX="87.0" layoutY="270.0" prefHeight="30" text="Subject ID:"/>
+        <TextField fx:id="subjectIdText" layoutX="160.0" layoutY="270.0"/>
+        <Label layoutX="339.0" layoutY="270.0" prefHeight="30" text="Object ID:"/>
+        <TextField fx:id="objectIdText" layoutX="409.0" layoutY="270.0"/>
+        <Button fx:id="readButton" layoutX="580.0" layoutY="270.0" mnemonicParsing="false" prefHeight="30.0"
+                prefWidth="100.0" text="Read"/>
+        <Button fx:id="writeButton" layoutX="698.0" layoutY="270.0" mnemonicParsing="false" prefHeight="30.0"
+                prefWidth="100.0" text="Write"/>
+    </AnchorPane>
+    <SplitPane dividerPositions="0.5" maxHeight="200.0" maxWidth="900.0" minHeight="200.0" minWidth="900.0"
+               prefHeight="200.0" prefWidth="900.0">
+        <ScrollPane maxHeight="200.0" maxWidth="450.0" minHeight="200.0" minWidth="450.0" prefHeight="200.0"
+                    prefWidth="450.0">
+            <ListView fx:id="userListView" prefHeight="200.0" prefWidth="450.0"/>
+        </ScrollPane>
+        <ScrollPane maxHeight="200.0" maxWidth="450.0" minHeight="200.0" minWidth="450.0" prefHeight="200.0"
+                    prefWidth="450.0">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                <ListView fx:id="fileListView" prefHeight="200.0" prefWidth="450.0"/>
+            </AnchorPane>
+        </ScrollPane>
+    </SplitPane>
+</SplitPane>
